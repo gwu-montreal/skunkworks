@@ -3,9 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "next start",
-    "dev": "next dev",
-    "build": "next build",
+    "start": "next dev",
+    "export": "next build && next export && node export.js",
     "test": "run-s -l test:*",
     "test:eslint": "eslint '{src,test}/**/*.{js,ts,tsx}' --ext .ts,.tsx",
     "test:prettier": "prettier '{src,test}/**/*.{css,js,ts,tsx}' -l",
@@ -28,12 +27,14 @@
     "next-compose-plugins": "^2.2.0",
     "next-fonts": "^1.0.3",
     "next-optimized-images": "^2.5.4",
+    "puppeteer": "^2.1.0",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "source-map-support": "^0.5.16",
     "typescript": "^3.7.3"
   },
   "devDependencies": {
+    "@types/puppeteer": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "2.18.0",
     "@typescript-eslint/parser": "^2.15.0",
     "eslint": "^6.7.2",
