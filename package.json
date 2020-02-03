@@ -13,6 +13,8 @@
     "prettier": "prettier --write '{src,test}/**/*.{css,js,ts,tsx}'"
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.5.5",
+    "@next/mdx": "^9.2.1",
     "@types/classnames": "^2.2.9",
     "@types/node": "^13.1.6",
     "@types/node-fetch": "^2.5.4",

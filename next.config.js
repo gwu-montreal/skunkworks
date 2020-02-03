@@ -3,6 +3,7 @@ const path = require("path");
 
 const withPlugins = require("next-compose-plugins");
 const fonts = require("next-fonts");
+const mdx = require("@next/mdx");
 // const optimizedImages = require("next-optimized-images");
 
 module.exports = withPlugins(
@@ -26,6 +27,7 @@ module.exports = withPlugins(
         return cfg;
       }
     }),
+    mdx(),
     fonts
     // optimizedImages
   ],

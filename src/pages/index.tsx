@@ -1,6 +1,7 @@
 import React from "react";
-import Link from "next/link";
 import styled, { css } from "astroturf";
+
+import Text from "../sample.mdx";
 
 const { button, icongroup, avatar } = css`
   .button {
@@ -29,9 +30,7 @@ const Butt = styled.div`
 const Index: React.FC = () => {
   return (
     <Butt>
-      <Link href="/other">
-        <a>meets</a>
-      </Link>
+      <Text />
       <div className={button}>greets</div>
     </Butt>
   );

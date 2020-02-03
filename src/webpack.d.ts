@@ -3,6 +3,11 @@ declare module "*.module.css" {
   export default styles;
 }
 
+declare module "*.mdx" {
+  let MDXComponent: (props: any) => JSX.Element;
+  export default MDXComponent;
+}
+
 declare module "*.jpeg" {
   const value: string;
   export default value;
